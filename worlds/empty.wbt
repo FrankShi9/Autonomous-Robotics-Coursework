@@ -1,0 +1,32 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4813936052894738 0.47422703390940285 0.7371356164885076 1.8854599626760207
+  position 0.07278013204923478 -6.595150829294189 13.32105311217582
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 4
+  wallHeight 0.4
+}
+Pioneer3dx {
+  hidden rotation_1 0.5773502783055704 -0.5773502646316534 -0.5773502646316534 2.094394986326086
+  translation -0.5 -1 0.0975
+  rotation 0 1 0 0
+  controller "deadreckoning_controller"
+  controllerArgs [
+    ""
+  ]
+  supervisor TRUE
+  extensionSlot [
+    Display {
+      name "odometryDisplay"
+      width 300
+      height 128
+    }
+  ]
+}
